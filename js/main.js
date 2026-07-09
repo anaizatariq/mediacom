@@ -16,6 +16,7 @@ animEls.forEach(el => observer.observe(el));
 const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 const businessPages = new Set([
   'telecom.html',
+  'mscol.html',
   'cybersecurity.html',
   'real-estate.html',
   'agriculture.html',
