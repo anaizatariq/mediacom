@@ -1,188 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>McSOL (Pvt.) Ltd. – Mediacom Group</title>
-  <meta name="description" content="McSOL (Pvt.) Ltd. provides FTTH internet, digital television and voice services on modern fiber-optic infrastructure across Faisalabad." />
+  <meta name="description"
+    content="McSOL (Pvt.) Ltd. provides FTTH internet, digital television and voice services on modern fiber-optic infrastructure across Faisalabad." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
 </head>
+
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-mc navbar-expand-lg">
-  <div class="container px-4 px-lg-5 d-flex align-items-center justify-content-between h-100 w-100">
-    <a class="d-flex align-items-center gap-2 text-decoration-none" href="index.html">
-      <img src="assets/logo.png" alt="Mediacom Group" class="brand-logo" />
-    </a>
-    <div class="d-none d-lg-flex align-items-center gap-4">
-      <a class="nav-link-mc" href="index.html">Home</a>
-      <a class="nav-link-mc" href="about.html">About</a>
-      <div class="dropdown">
-        <button class="nav-link-mc btn btn-link p-0 d-flex align-items-center gap-1 active" data-bs-toggle="dropdown" style="text-decoration:none; box-shadow:none;">
-          Businesses <i class="bi bi-chevron-down" style="font-size:0.7rem;"></i>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-mc navbar-expand-lg">
+    <div class="container px-4 px-lg-5 d-flex align-items-center justify-content-between h-100 w-100">
+      <a class="d-flex align-items-center gap-2 text-decoration-none" href="index.html">
+        <img src="assets/logo-navbar-clean.png" alt="Mediacom Group" class="brand-logo" />
+      </a>
+      <div class="d-none d-lg-flex align-items-center gap-4">
+        <a class="nav-link-mc" href="index.html">Home</a>
+        <a class="nav-link-mc" href="about.html">About</a>
+        <div class="dropdown">
+          <button class="nav-link-mc btn btn-link p-0 d-flex align-items-center gap-1 active" data-bs-toggle="dropdown"
+            style="text-decoration:none; box-shadow:none;">
+            Businesses <i class="bi bi-chevron-down" style="font-size:0.7rem;"></i>
+          </button>
+          <div class="dropdown-menu p-4"
+            style="min-width:500px; background:var(--navy-light); border:1px solid rgba(196,157,77,0.12); border-radius:8px;">
+            <div class="row g-2">
+              <div class="col-6"><a href="telecom.html" class="dropdown-item rounded-2 dropdown-item-mc">
+                  <div class="item-name">Mediacom CATV</div>
+                  <div class="item-desc">Cable TV & Fiber Optics</div>
+                </a></div>
+              <div class="col-6"><a href="mscol.html" class="dropdown-item rounded-2 dropdown-item-mc">
+                  <div class="item-name">McSOL (Pvt.) Ltd.</div>
+                  <div class="item-desc">FTTH Internet & TV</div>
+                </a></div>
+              <div class="col-6"><a href="real-estate.html" class="dropdown-item rounded-2 dropdown-item-mc">
+                  <div class="item-name">Mediacom Developers</div>
+                  <div class="item-desc">Real Estate & Construction</div>
+                </a></div>
+              <div class="col-6"><a href="real-estate.html" class="dropdown-item rounded-2 dropdown-item-mc">
+                  <div class="item-name">Mediacom Trade City</div>
+                  <div class="item-desc">Commercial & Retail</div>
+                </a></div>
+              <div class="col-6"><a href="c8-central.html" class="dropdown-item rounded-2 dropdown-item-mc"><div class="item-name">C8 Central</div>
+                  <div class="item-desc">Luxury Apartments</div>
+                </a></div>
+              <div class="col-6"><a href="agriculture.html" class="dropdown-item rounded-2 dropdown-item-mc">
+                  <div class="item-name">Sindhu Agriculture Farms</div>
+                  <div class="item-desc">Agriculture & Dairy</div>
+                </a></div>
+              <div class="col-6"><a href="petroleum.html" class="dropdown-item rounded-2 dropdown-item-mc">
+                  <div class="item-name">Mediacom Petroleum</div>
+                  <div class="item-desc">Fuel & Energy</div>
+                </a></div>
+              <div class="col-6"><a href="digital-institute.html" class="dropdown-item rounded-2 dropdown-item-mc">
+                  <div class="item-name">Mediacom Digital Institute</div>
+                  <div class="item-desc">IT Education & Digital Skills</div>
+                </a></div>
+            </div>
+          </div>
+        </div>
+        <a class="nav-link-mc" href="leadership.html">Leadership</a>
+        <a class="nav-link-mc" href="projects.html">Projects</a>
+        <a class="nav-link-mc" href="contact.html">Contact</a>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <a href="contact.html" class="btn-quote d-none d-lg-block">Get a Quote</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="dropdown-menu p-4" style="min-width:500px; background:var(--navy-light); border:1px solid rgba(196,157,77,0.12); border-radius:8px;">
-          <div class="row g-2">
-            <div class="col-6"><a href="telecom.html" class="dropdown-item rounded-2 dropdown-item-mc"><div class="item-name">Mediacom CATV</div><div class="item-desc">Cable TV & Fiber Optics</div></a></div>
-            <div class="col-6"><a href="mscol.html" class="dropdown-item rounded-2 dropdown-item-mc"><div class="item-name">McSOL (Pvt.) Ltd.</div><div class="item-desc">FTTH Internet & TV</div></a></div>
-            <div class="col-6"><a href="real-estate.html" class="dropdown-item rounded-2 dropdown-item-mc"><div class="item-name">Mediacom Developers</div><div class="item-desc">Real Estate & Construction</div></a></div>
-            <div class="col-6"><a href="real-estate.html" class="dropdown-item rounded-2 dropdown-item-mc"><div class="item-name">Mediacom Trade City</div><div class="item-desc">Commercial & Retail</div></a></div>
-            <div class="col-6"><a href="real-estate.html" class="dropdown-item rounded-2 dropdown-item-mc"><div class="item-name">C8 Central</div><div class="item-desc">Luxury Apartments</div></a></div>
-            <div class="col-6"><a href="agriculture.html" class="dropdown-item rounded-2 dropdown-item-mc"><div class="item-name">Sindhu Agriculture Farms</div><div class="item-desc">Agriculture & Dairy</div></a></div>
-            <div class="col-6"><a href="petroleum.html" class="dropdown-item rounded-2 dropdown-item-mc"><div class="item-name">Mediacom Petroleum</div><div class="item-desc">Fuel & Energy</div></a></div>
-            <div class="col-6"><a href="digital-institute.html" class="dropdown-item rounded-2 dropdown-item-mc"><div class="item-name">Mediacom Digital Institute</div><div class="item-desc">IT Education & Digital Skills</div></a></div>
+      </div>
+      <div class="collapse d-lg-none w-100" id="mobileMenu"
+        style="position:absolute; top:80px; left:0; right:0; background:var(--navy); border-top:1px solid rgba(196,157,77,0.1); padding:1.5rem;">
+        <a class="footer-link d-block mb-3" href="index.html">Home</a>
+        <a class="footer-link d-block mb-3" href="about.html">About</a>
+        <div class="mb-2"
+          style="font-size:0.75rem; font-weight:600; color:var(--gold); text-transform:uppercase; letter-spacing:0.15em;">
+          Businesses</div>
+        <a class="footer-link d-block ps-3 mb-2" href="telecom.html">Mediacom CATV</a>
+        <a class="footer-link d-block ps-3 mb-2" href="mscol.html">McSOL (Pvt.) Ltd.</a>
+        <a class="footer-link d-block ps-3 mb-2" href="real-estate.html">Mediacom Developers</a>
+        <a class="footer-link d-block ps-3 mb-2" href="real-estate.html">Mediacom Trade City</a>
+        <a class="footer-link d-block ps-3 mb-2" href="c8-central.html">C8 Central</a>
+        <a class="footer-link d-block ps-3 mb-2" href="agriculture.html">Sindhu Agriculture</a>
+        <a class="footer-link d-block ps-3 mb-3" href="petroleum.html">Mediacom Petroleum</a>
+        <a class="footer-link d-block ps-3 mb-2" href="digital-institute.html">Mediacom Digital Institute</a>
+        <a class="footer-link d-block mb-3" href="leadership.html">Leadership</a>
+        <a class="footer-link d-block mb-3" href="projects.html">Projects</a>
+        <a class="footer-link d-block mb-4" href="contact.html">Contact</a>
+        <a href="contact.html" class="btn-gold">Get a Quote</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <img class="hero-bg" src="assets/mcsol pvt/first.jpeg" alt="McSOL FTTH" />
+    <div class="hero-overlay"></div>
+    <div class="hero-content section-padding w-100">
+      <div class="container-wide">
+        <p class="section-label mb-2 animate-fade-up">Mediacom Internet</p>
+        <h1 class="heading-xl text-cream mb-3 animate-fade-up">McSOL (Pvt.) Ltd.</h1>
+        <p class="body-lg animate-fade-up" style="color:rgba(245,240,225,0.8); max-width:36rem;">
+          Gigabit Fiber Internet for Faisalabad </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding-lg" style="background:var(--bg);">
+    <div class="container-wide">
+      <div class="row g-5 align-items-center mb-5">
+        <div class="col-lg-6 animate-fade-up">
+          <p class="section-label mb-2">McSOL (Pvt.) Ltd.</p>
+          <h2 class="heading-lg mb-4">Fast, Reliable Fiber-to-the-Home</h2>
+          <div class="gold-divider-left mb-4"></div>
+          <p class="body-md">
+            McSOL (Pvt.) Ltd. is one of Faisalabad’s leading fiber-to-the-home (FTTH) internet service providers,
+            delivering high-speed internet, digital television, and voice services through a modern fiber-optic network.
+            Serving over 35,000 FTTH subscribers, the company continues to expand its network with scalable
+            infrastructure designed for gigabit connectivity.
+          </p>
+          <p class="body-md mt-4">
+            Strategic partnerships with Tier-1 operators, including Transworld and CMPak‑Zong, provide a resilient
+            backbone, while dedicated engineering and network operations teams ensure dependable service for
+            residential, commercial, and enterprise customers.
+          </p>
+        </div>
+        <div class="col-lg-6 animate-fade-up">
+          <img src="assets/mcsol pvt/second.png" alt="McSOL FTTH network" class="rounded-3 w-100" loading="lazy" />
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4 animate-fade-up">
+          <div class="glass-card-dark p-4 h-100">
+            <i class="bi bi-wifi text-gold" style="font-size:2rem; display:block; margin-bottom:1rem;"></i>
+            <h3 class="heading-sm text-cream mb-3">Gigabit Internet</h3>
+            <p style="font-size:0.875rem; color:rgba(245,240,225,0.5); line-height:1.7;">
+              Fiber-to-the-home connectivity for streaming, gaming and remote work with low latency and consistent
+              speeds.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 animate-fade-up">
+          <div class="glass-card-dark p-4 h-100">
+            <i class="bi bi-tv text-gold" style="font-size:2rem; display:block; margin-bottom:1rem;"></i>
+            <h3 class="heading-sm text-cream mb-3">Digital TV + Voice</h3>
+            <p style="font-size:0.875rem; color:rgba(245,240,225,0.5); line-height:1.7;">
+              A premium digital entertainment package with crystal-clear television channels and reliable voice service.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 animate-fade-up">
+          <div class="glass-card-dark p-4 h-100">
+            <i class="bi bi-server text-gold" style="font-size:2rem; display:block; margin-bottom:1rem;"></i>
+            <h3 class="heading-sm text-cream mb-3">Resilient Network</h3>
+            <p style="font-size:0.875rem; color:rgba(245,240,225,0.5); line-height:1.7;">
+              Built on GPON technology with strong backbone partnerships, designed for continuous service and rapid
+              support.
+            </p>
           </div>
         </div>
       </div>
-      <a class="nav-link-mc" href="leadership.html">Leadership</a>
-      <a class="nav-link-mc" href="projects.html">Projects</a>
-      <a class="nav-link-mc" href="contact.html">Contact</a>
     </div>
-    <div class="d-flex align-items-center gap-3">
-      <a href="contact.html" class="btn-quote d-none d-lg-block">Get a Quote</a>
-      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-    <div class="collapse d-lg-none w-100" id="mobileMenu" style="position:absolute; top:80px; left:0; right:0; background:var(--navy); border-top:1px solid rgba(196,157,77,0.1); padding:1.5rem;">
-      <a class="footer-link d-block mb-3" href="index.html">Home</a>
-      <a class="footer-link d-block mb-3" href="about.html">About</a>
-      <div class="mb-2" style="font-size:0.75rem; font-weight:600; color:var(--gold); text-transform:uppercase; letter-spacing:0.15em;">Businesses</div>
-      <a class="footer-link d-block ps-3 mb-2" href="telecom.html">Mediacom CATV</a>
-      <a class="footer-link d-block ps-3 mb-2" href="mscol.html">McSOL (Pvt.) Ltd.</a>
-      <a class="footer-link d-block ps-3 mb-2" href="real-estate.html">Mediacom Developers</a>
-      <a class="footer-link d-block ps-3 mb-2" href="real-estate.html">Mediacom Trade City</a>
-      <a class="footer-link d-block ps-3 mb-2" href="real-estate.html">C8 Central</a>
-      <a class="footer-link d-block ps-3 mb-2" href="agriculture.html">Sindhu Agriculture</a>
-      <a class="footer-link d-block ps-3 mb-3" href="petroleum.html">Mediacom Petroleum</a>
-      <a class="footer-link d-block ps-3 mb-2" href="digital-institute.html">Mediacom Digital Institute</a>
-      <a class="footer-link d-block mb-3" href="leadership.html">Leadership</a>
-      <a class="footer-link d-block mb-3" href="projects.html">Projects</a>
-      <a class="footer-link d-block mb-4" href="contact.html">Contact</a>
-      <a href="contact.html" class="btn-gold">Get a Quote</a>
-    </div>
-  </div>
-</nav>
-
-<!-- PAGE HERO -->
-<section class="page-hero">
-  <img class="hero-bg" src="assets/mcsol pvt/first.jpeg" alt="McSOL FTTH" />
-  <div class="hero-overlay"></div>
-  <div class="hero-content section-padding w-100">
-    <div class="container-wide">
-      <p class="section-label mb-2 animate-fade-up">Mediacom Internet</p>
-      <h1 class="heading-xl text-cream mb-3 animate-fade-up delay-1">McSOL (Pvt.) Ltd.</h1>
-        <p class="body-lg animate-fade-up delay-2" style="color:rgba(245,240,225,0.8); max-width:36rem;">
-       Gigabit Fiber Internet for Faisalabad </p>
-    </div>
-  </div>
-</section>
-
-<section class="section-padding-lg" style="background:var(--bg);">
-  <div class="container-wide">
-    <div class="row g-5 align-items-center mb-5">
-      <div class="col-lg-6 animate-fade-up">
-        <p class="section-label mb-2">McSOL (Pvt.) Ltd.</p>
-        <h2 class="heading-lg mb-4">Fast, Reliable Fiber-to-the-Home</h2>
-        <div class="gold-divider-left mb-4"></div>
-        <p class="body-md">
-          McSOL (Pvt.) Ltd. is one of Faisalabad’s leading fiber-to-the-home (FTTH) internet service providers, delivering high-speed internet, digital television, and voice services through a modern fiber-optic network. Serving over 35,000 FTTH subscribers, the company continues to expand its network with scalable infrastructure designed for gigabit connectivity.
-        </p>
-        <p class="body-md mt-4">
-          Strategic partnerships with Tier-1 operators, including Transworld and CMPak‑Zong, provide a resilient backbone, while dedicated engineering and network operations teams ensure dependable service for residential, commercial, and enterprise customers.
-        </p>
-      </div>
-      <div class="col-lg-6 animate-fade-up delay-2">
-        <img src="assets/mcsol pvt/second.png" alt="McSOL FTTH network" class="rounded-3 w-100" loading="lazy" />
-      </div>
-    </div>
-
-    <div class="row g-4">
-      <div class="col-md-4 animate-fade-up">
-        <div class="glass-card-dark p-4 h-100">
-          <i class="bi bi-wifi text-gold" style="font-size:2rem; display:block; margin-bottom:1rem;"></i>
-          <h3 class="heading-sm text-cream mb-3">Gigabit Internet</h3>
-          <p style="font-size:0.875rem; color:rgba(245,240,225,0.5); line-height:1.7;">
-            Fiber-to-the-home connectivity for streaming, gaming and remote work with low latency and consistent speeds.
-          </p>
-        </div>
-      </div>
-      <div class="col-md-4 animate-fade-up delay-1">
-        <div class="glass-card-dark p-4 h-100">
-          <i class="bi bi-tv text-gold" style="font-size:2rem; display:block; margin-bottom:1rem;"></i>
-          <h3 class="heading-sm text-cream mb-3">Digital TV + Voice</h3>
-          <p style="font-size:0.875rem; color:rgba(245,240,225,0.5); line-height:1.7;">
-            A premium digital entertainment package with crystal-clear television channels and reliable voice service.
-          </p>
-        </div>
-      </div>
-      <div class="col-md-4 animate-fade-up delay-2">
-        <div class="glass-card-dark p-4 h-100">
-          <i class="bi bi-server text-gold" style="font-size:2rem; display:block; margin-bottom:1rem;"></i>
-          <h3 class="heading-sm text-cream mb-3">Resilient Network</h3>
-          <p style="font-size:0.875rem; color:rgba(245,240,225,0.5); line-height:1.7;">
-            Built on GPON technology with strong backbone partnerships, designed for continuous service and rapid support.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
 
 
-<!-- FOOTER -->
-<footer class="site-footer">
-  <div class="footer-top section-padding">
-    <div class="container-wide">
-      <div class="row g-5">
-        <div class="col-lg-4">
-          <img src="assets/logo.png" alt="Mediacom Group" class="brand-logo mb-3" style="filter: brightness(0) invert(1);" />
-          <p style="font-size:0.9rem; color:rgba(245,240,225,0.6); line-height:1.75; margin-bottom:1.5rem;">Since 1995, Mediacom Group has been providing services in several areas of public interest across Pakistan and U.A.E.</p>
-          <div class="d-flex gap-2">
-            <a href="#" class="footer-social-btn">f</a><a href="#" class="footer-social-btn">t</a><a href="#" class="footer-social-btn">Y</a><a href="#" class="footer-social-btn">in</a>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-top section-padding">
+      <div class="container-wide">
+        <div class="row g-5">
+          <div class="col-lg-4">
+            <img src="assets/logo-navbar-clean.png" alt="Mediacom Group" class="brand-logo mb-3"
+               />
+            <p style="font-size:0.9rem; color:rgba(245,240,225,0.6); line-height:1.75; margin-bottom:1.5rem;">Since
+              1995, Mediacom Group has been providing services in several areas of public interest across Pakistan and
+              U.A.E.</p>
+            <div class="d-flex gap-2">
+              <a href="#" class="footer-social-btn">f</a><a href="#" class="footer-social-btn">t</a><a href="#"
+                class="footer-social-btn">Y</a><a href="#" class="footer-social-btn">in</a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-2">
+            <div class="footer-heading">Our Businesses</div>
+            <a href="telecom.html" class="footer-link">Mediacom CATV</a>
+            <a href="mscol.html" class="footer-link">McSOL (Pvt.) Ltd.</a>
+            <a href="real-estate.html" class="footer-link">Mediacom Developers</a>
+            <a href="agriculture.html" class="footer-link">Sindhu Agriculture</a>
+            <a href="petroleum.html" class="footer-link">Mediacom Petroleum</a>
+            <a href="digital-institute.html" class="footer-link">Mediacom Digital Institute</a>
+          </div>
+          <div class="col-sm-6 col-lg-2">
+            <div class="footer-heading">Company</div>
+            <a href="about.html" class="footer-link">About Us</a>
+            <a href="leadership.html" class="footer-link">Leadership</a>
+            <a href="projects.html" class="footer-link">Projects</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+          </div>
+          <div class="col-lg-4">
+            <div class="footer-heading">Contact</div>
+            <div class="footer-contact-item"><i class="bi bi-geo-alt-fill footer-contact-icon"></i><span
+                class="footer-contact-text">Mediacom Trade City, Jaranwala Road, Faisalabad, Pakistan</span></div>
+            <div class="footer-contact-item"><i class="bi bi-telephone-fill footer-contact-icon"></i>
+              <div>
+                <div class="footer-contact-text">Tel: +92-41-111 888 300</div>
+                <div class="footer-contact-text">Fax: +92-41-850 2337-38</div>
+              </div>
+            </div>
+            <div class="footer-contact-item"><i class="bi bi-envelope-fill footer-contact-icon"></i><span
+                class="footer-contact-text">info@mediacom.com.pk</span></div>
           </div>
         </div>
-        <div class="col-sm-6 col-lg-2">
-          <div class="footer-heading">Our Businesses</div>
-          <a href="telecom.html" class="footer-link">Mediacom CATV</a>
-          <a href="mscol.html" class="footer-link">McSOL (Pvt.) Ltd.</a>
-          <a href="real-estate.html" class="footer-link">Mediacom Developers</a>
-          <a href="agriculture.html" class="footer-link">Sindhu Agriculture</a>
-          <a href="petroleum.html" class="footer-link">Mediacom Petroleum</a>
-          <a href="digital-institute.html" class="footer-link">Mediacom Digital Institute</a>
-        </div>
-        <div class="col-sm-6 col-lg-2">
-          <div class="footer-heading">Company</div>
-          <a href="about.html" class="footer-link">About Us</a>
-          <a href="leadership.html" class="footer-link">Leadership</a>
-          <a href="projects.html" class="footer-link">Projects</a>
-          <a href="contact.html" class="footer-link">Contact</a>
-        </div>
-        <div class="col-lg-4">
-          <div class="footer-heading">Contact</div>
-          <div class="footer-contact-item"><i class="bi bi-geo-alt-fill footer-contact-icon"></i><span class="footer-contact-text">Mediacom Trade City, Jaranwala Road, Faisalabad, Pakistan</span></div>
-          <div class="footer-contact-item"><i class="bi bi-telephone-fill footer-contact-icon"></i><div><div class="footer-contact-text">Tel: +92-41-111 888 300</div><div class="footer-contact-text">Fax: +92-41-850 2337-38</div></div></div>
-          <div class="footer-contact-item"><i class="bi bi-envelope-fill footer-contact-icon"></i><span class="footer-contact-text">info@mediacom.com.pk</span></div>
-        </div>
       </div>
     </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="container-wide d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
-      <p class="footer-copy mb-0">&copy; <span id="yr"></span> Mediacom Group of Companies. All rights reserved.</p>
-      <p class="footer-copy mb-0">Operational since 1995 — Pakistan &amp; U.A.E.</p>
+    <div class="footer-bottom">
+      <div class="container-wide d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+        <p class="footer-copy mb-0">&copy; <span id="yr"></span> Mediacom Group of Companies. All rights reserved.</p>
+        <p class="footer-copy mb-0">Operational since 1995 — Pakistan &amp; U.A.E.</p>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<button id="back-to-top" aria-label="Back to top"><i class="bi bi-chevron-up"></i></button>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/main.js"></script>
-<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+  <button id="back-to-top" aria-label="Back to top"><i class="bi bi-chevron-up"></i></button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
 </body>
+
 </html>
