@@ -347,7 +347,7 @@ img {
   backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(184, 134, 11, 0.12);
 
-  height: 80px;
+  height: 88px;
   transition: background 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), backdrop-filter 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
   box-shadow: var(--shadow-sm);
 }
@@ -371,34 +371,81 @@ img {
 }
 
 .navbar-mc .container {
-  max-width: 1280px;
+  max-width: 1320px;
   height: 100%;
 }
 
 .brand-logo {
-  height: 50px;
+  height: 48px;
   width: auto;
   object-fit: contain;
   transition: transform var(--transition);
 }
 
 .brand-logo:hover {
-  transform: scale(1.05);
+  transform: scale(1.04);
 }
 
 .nav-link-mc {
   font-family: var(--font-body);
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   font-weight: 500;
-  color: rgba(250, 248, 243, 0.75) !important;
-  transition: color var(--transition);
-  padding: 0.5rem 0.25rem !important;
+  letter-spacing: 0.02em;
+  color: rgba(250, 248, 243, 0.85) !important;
+  transition: color 0.3s ease;
+  padding: 0.5rem 0 !important;
   position: relative;
+}
+
+.nav-link-mc::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.nav-link-mc:hover::after,
+.nav-link-mc.active::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .nav-link-mc:hover,
 .nav-link-mc.active {
   color: var(--gold) !important;
+}
+
+.btn-nav-premium {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.55rem 1.6rem !important;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold) !important;
+  border: 1px solid rgba(184, 134, 11, 0.4);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  margin-left: 0.5rem;
+}
+
+.btn-nav-premium::after {
+  display: none !important;
+}
+
+.btn-nav-premium:hover {
+  background: rgba(184, 134, 11, 0.08);
+  border-color: var(--gold);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(184, 134, 11, 0.15);
 }
 
 .navbar-mc .dropdown-menu {
@@ -1460,6 +1507,168 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+/* ── PREMIIUM FAQ ACCORDION ── */
+.accordion-mc {
+  --bs-accordion-bg: transparent;
+  --bs-accordion-border-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.accordion-mc .accordion-item {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg) !important;
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: all var(--transition);
+}
+
+.accordion-mc .accordion-item:hover {
+  border-color: rgba(184, 134, 11, 0.3);
+  box-shadow: var(--shadow-card);
+  transform: translateY(-2px);
+}
+
+.accordion-mc .accordion-button {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--navy);
+  padding: 1.5rem 1.75rem;
+  background: transparent;
+  box-shadow: none !important;
+  transition: all var(--transition);
+}
+
+.accordion-mc .accordion-button:not(.collapsed) {
+  background: rgba(184, 134, 11, 0.03);
+  color: var(--gold);
+}
+
+.accordion-mc .accordion-button::after {
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230A1628'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-mc .accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23B8860B'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-mc .accordion-body {
+  padding: 0 1.75rem 1.75rem 1.75rem;
+  color: var(--slate);
+  font-size: 0.95rem;
+  line-height: 1.8;
+  border-top: none;
+}
+
+/* ── INFINITE SCROLLING MARQUEE ── */
+/* Full-bleed breakout: pulls the row out of .container-wide's 1280px cap
+   and stretches it edge-to-edge, no matter how deep it's nested.
+   body already has overflow-x:hidden (line ~65) so this can't cause
+   a horizontal scrollbar. */
+.marquee-container {
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+.marquee-track {
+  display: flex;
+  gap: 1rem;
+  width: max-content;
+  animation: scroll-left 45s linear infinite;
+  padding: 1rem 0;
+}
+
+.marquee-container:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-left {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@keyframes scroll-right {
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0); }
+}
+
+[data-direction="right"] .marquee-track {
+  animation-name: scroll-right;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
+  .marquee-container { overflow-x: auto; }
+}
+
+.channel-card {
+  width: 150px;
+  height: 90px;
+  border-radius: 0.6rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-shrink: 0;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.channel-card:hover {
+  transform: scale(1.05) translateY(-4px);
+  box-shadow: 0 15px 30px rgba(184, 134, 11, 0.2);
+  border-color: rgba(184, 134, 11, 0.3);
+}
+
+/* Real logo photo, cropped to fill the whole tile — used when the source
+   image already has its own full-bleed brand background (wide logos). */
+.channel-card__logo--cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Real logo photo, shown in full with no cropping — used for square/portrait
+   logos so text or icon elements never get cut off. The card's own solid
+   background (sampled from the logo's edge color) shows around it. */
+.channel-card__logo--contain {
+  max-width: 78%;
+  max-height: 74%;
+  object-fit: contain;
+}
+
+/* Icon + wordmark fallback — shown automatically only if a logo file is
+   ever missing/renamed (onerror swap in the render function), so a card
+   never breaks even if a filename changes later. */
+.channel-card__fallback {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  font-weight: 800;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 0.6rem;
+}
+
+.channel-card__fallback i {
+  font-size: 1.4rem;
+  opacity: 0.9;
 }
 
 .petroleum-visual-note span,

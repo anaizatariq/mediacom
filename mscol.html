@@ -11,6 +11,21 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
+  <style>
+    /* Premium Mobile Fix: Naturally crop out baked-in image text via subtle scaling, avoiding harsh gradient hides */
+    @media (max-width: 991px) {
+
+      .hero-bg,
+      .data-centre-img {
+        transform: scale(1.65);
+        transform-origin: top center;
+      }
+
+      .page-hero {
+        overflow: hidden !important;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -21,58 +36,14 @@
       <a class="d-flex align-items-center gap-2 text-decoration-none" href="index.html">
         <img src="assets/logo-navbar-clean.png" alt="Mediacom Group" class="brand-logo" />
       </a>
-      <div class="d-none d-lg-flex align-items-center gap-4">
+      <div class="d-none d-lg-flex align-items-center" style="gap: 2.25rem;">
         <a class="nav-link-mc" href="index.html">Home</a>
         <a class="nav-link-mc" href="about.html">About</a>
-        <div class="dropdown">
-          <button class="nav-link-mc btn btn-link p-0 d-flex align-items-center gap-1 active" data-bs-toggle="dropdown"
-            style="text-decoration:none; box-shadow:none;">
-            Businesses <i class="bi bi-chevron-down" style="font-size:0.7rem;"></i>
-          </button>
-          <div class="dropdown-menu p-4"
-            style="min-width:500px; background:var(--navy-light); border:1px solid rgba(196,157,77,0.12); border-radius:8px;">
-            <div class="row g-2">
-              <div class="col-6"><a href="telecom.html" class="dropdown-item rounded-2 dropdown-item-mc">
-                  <div class="item-name">Mediacom CATV</div>
-                  <div class="item-desc">Cable TV & Fiber Optics</div>
-                </a></div>
-              <div class="col-6"><a href="mscol.html" class="dropdown-item rounded-2 dropdown-item-mc">
-                  <div class="item-name">McSOL (Pvt.) Ltd.</div>
-                  <div class="item-desc">FTTH Internet & TV</div>
-                </a></div>
-              <div class="col-6"><a href="real-estate.html" class="dropdown-item rounded-2 dropdown-item-mc">
-                  <div class="item-name">Mediacom Developers</div>
-                  <div class="item-desc">Real Estate & Construction</div>
-                </a></div>
-              <div class="col-6"><a href="real-estate.html" class="dropdown-item rounded-2 dropdown-item-mc">
-                  <div class="item-name">Mediacom Trade City</div>
-                  <div class="item-desc">Commercial & Retail</div>
-                </a></div>
-              <div class="col-6"><a href="c8-central.html" class="dropdown-item rounded-2 dropdown-item-mc">
-                  <div class="item-name">C8 Central</div>
-                  <div class="item-desc">Luxury Apartments</div>
-                </a></div>
-              <div class="col-6"><a href="agriculture.html" class="dropdown-item rounded-2 dropdown-item-mc">
-                  <div class="item-name">Sindhu Agriculture Farms</div>
-                  <div class="item-desc">Agriculture & Dairy</div>
-                </a></div>
-              <div class="col-6"><a href="petroleum.html" class="dropdown-item rounded-2 dropdown-item-mc">
-                  <div class="item-name">Mediacom Petroleum</div>
-                  <div class="item-desc">Fuel & Energy</div>
-                </a></div>
-              <div class="col-6"><a href="digital-institute.html" class="dropdown-item rounded-2 dropdown-item-mc">
-                  <div class="item-name">Mediacom Digital Institute</div>
-                  <div class="item-desc">IT Education & Digital Skills</div>
-                </a></div>
-            </div>
-          </div>
-        </div>
         <a class="nav-link-mc" href="leadership.html">Leadership</a>
         <a class="nav-link-mc" href="projects.html">Projects</a>
-        <a class="nav-link-mc" href="contact.html">Contact</a>
+        <a class="btn-nav-premium" href="contact.html">Contact</a>
       </div>
-      <div class="d-flex align-items-center gap-3">
-        <a href="contact.html" class="btn-quote d-none d-lg-block">Get a Quote</a>
+      <div class="d-flex align-items-center justify-content-end" style="width: 100px;">
         <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -81,21 +52,9 @@
         style="position:absolute; top:80px; left:0; right:0; background:var(--navy); border-top:1px solid rgba(196,157,77,0.1); padding:1.5rem;">
         <a class="footer-link d-block mb-3" href="index.html">Home</a>
         <a class="footer-link d-block mb-3" href="about.html">About</a>
-        <div class="mb-2"
-          style="font-size:0.75rem; font-weight:600; color:var(--gold); text-transform:uppercase; letter-spacing:0.15em;">
-          Businesses</div>
-        <a class="footer-link d-block ps-3 mb-2" href="telecom.html">Mediacom CATV</a>
-        <a class="footer-link d-block ps-3 mb-2" href="mscol.html">McSOL (Pvt.) Ltd.</a>
-        <a class="footer-link d-block ps-3 mb-2" href="real-estate.html">Mediacom Developers</a>
-        <a class="footer-link d-block ps-3 mb-2" href="real-estate.html">Mediacom Trade City</a>
-        <a class="footer-link d-block ps-3 mb-2" href="c8-central.html">C8 Central</a>
-        <a class="footer-link d-block ps-3 mb-2" href="agriculture.html">Sindhu Agriculture</a>
-        <a class="footer-link d-block ps-3 mb-3" href="petroleum.html">Mediacom Petroleum</a>
-        <a class="footer-link d-block ps-3 mb-2" href="digital-institute.html">Mediacom Digital Institute</a>
         <a class="footer-link d-block mb-3" href="leadership.html">Leadership</a>
         <a class="footer-link d-block mb-3" href="projects.html">Projects</a>
         <a class="footer-link d-block mb-4" href="contact.html">Contact</a>
-        <a href="contact.html" class="btn-gold">Get a Quote</a>
       </div>
     </div>
   </nav>
@@ -109,11 +68,13 @@
         <p class="section-label mb-2 animate-fade-up">Mediacom Internet</p>
         <h1 class="heading-xl text-cream mb-3 animate-fade-up">McSOL (Pvt.) Ltd.</h1>
         <p class="body-lg animate-fade-up" style="color:rgba(245,240,225,0.8); max-width:36rem;">
-          Gigabit Fiber Internet for Faisalabad </p>
+          McSol is the leading fiber internet and IT service provider in Faisalabad Reigon, delivering high-speed
+          connectivity along with reliable cloud computing, secure web and email hosting, crystal-clear HDTV, and
+          advance digital solutions. Trusted by hundreds of thousands of businesses and homes.</p>
       </div>
     </div>
   </section>
-  <section class="section-padding-lg" style="background:var(--bg);">
+  <section class="section-padding-lg pb-0" style="background:var(--bg);">
     <div class="container-wide">
       <div class="row g-5 align-items-center mb-5">
         <div class="col-lg-6 animate-fade-up">
@@ -138,17 +99,18 @@
       </div>
 
       <!-- ── ZONG PARTNERSHIP HIGHLIGHT ── -->
-      <div class="animate-fade-up mb-5 pb-4 border-bottom border-secondary border-opacity-10">
+      <div class="animate-fade-up mt-2 mb-0">
         <div class="row g-0"
           style="background: var(--navy); border-radius: 1.25rem; overflow: hidden; border: 1px solid rgba(184, 134, 11, 0.25); box-shadow: 0 20px 60px rgba(10, 22, 40, 0.15);">
           <!-- Left: Image Panel -->
           <div class="col-lg-5" style="position: relative; overflow: hidden; min-height: 300px;">
             <img src="assets/mcsol pvt/img1.jpeg" alt="McSOL & Zong Signing Ceremony" loading="lazy"
               style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" />
-           
+
           </div>
           <!-- Right: Content Panel -->
-          <div class="col-lg-7" style="padding: 3rem; display: flex; flex-direction: column; justify-content: center; gap: 1.25rem;">
+          <div class="col-lg-7"
+            style="padding: 3rem; display: flex; flex-direction: column; justify-content: center; gap: 1.25rem;">
             <div style="display: flex; align-items: center; gap: 0.75rem;">
               <i class="bi bi-newspaper" style="color: var(--gold); font-size: 1.1rem;"></i>
               <span
@@ -172,67 +134,201 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- ── SERVICES + IMAGE ── -->
-      <div class="animate-fade-up mt-5">
-        <div class="row mb-4">
-          <div class="col-12">
-            <h2 class="heading-md text-navy mb-2">Our Premium Services</h2>
-            <div class="gold-divider-left"></div>
+  <!-- ── COMPREHENSIVE SERVICES GRID ── -->
+  <section class="section-padding-lg pt-5 position-relative"
+    style="background: var(--bg); border-bottom: 1px solid rgba(184, 134, 11, 0.15);">
+    <div class="container-wide">
+      <div class="text-center mb-5 animate-fade-up">
+        <p class="section-label mb-2 mx-auto" style="color: var(--gold);">Fiber to the Home (FTTH)</p>
+        <h2 class="heading-lg text-navy mb-3">Our Comprehensive Services</h2>
+        <div class="gold-divider-center mx-auto mb-4"></div>
+        <p style="color: rgba(10,22,40,0.7); max-width: 600px; margin: 0 auto;">Discover our full range of high-speed
+          connectivity, entertainment, and enterprise infrastructure solutions.</p>
+      </div>
+
+            <div class="row g-4">
+        <!-- Service 1 -->
+        <div class="col-md-6 col-lg-4 col-xl-3 animate-fade-up" style="animation-delay: 0.0s;">
+          <div class="h-100 p-4"
+            style="background: #ffffff; border-radius: 1rem; border: 1px solid rgba(10,22,40,0.05); box-shadow: 0 10px 30px rgba(0,0,0,0.03); transition: all 0.3s ease; cursor: pointer;"
+            onmouseover="this.style.transform='translateY(-8px)'; this.style.borderColor='rgba(184, 134, 11, 0.4)'; this.style.boxShadow='0 15px 30px rgba(10,22,40,0.08)';"
+            onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(10,22,40,0.05)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.03)';">
+            <div class="mb-3"
+              style="width: 48px; height: 48px; background: rgba(184, 134, 11, 0.1); border-radius: 0.5rem; display: flex; align-items: center; justify-content: center;">
+              <i class="bi bi-house-door text-gold" style="font-size: 1.5rem;"></i>
+            </div>
+            <h4 class="text-navy mb-2" style="font-size: 1.05rem; font-weight: 700; line-height: 1.4;">1. FTTH BROADBAND</h4>
+            <p style="font-size: 0.85rem; color: rgba(10,22,40,0.7); margin: 0; line-height: 1.5;">High-speed fiber-to-the-home internet packages with unlimited data.</p>
           </div>
         </div>
-        <div class="row g-4 align-items-stretch">
-          <!-- Left: Photo -->
-          <div class="col-lg-5">
-            <div
-              style="border-radius: 1.25rem; overflow: hidden; height: 100%; min-height: 380px; box-shadow: 0 20px 50px rgba(10, 22, 40, 0.14); position: relative;">
-              <img src="assets/mcsol pvt/img2.jpeg" alt="McSOL Enterprise Partnership" loading="lazy"
-                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;" />
+
+        <!-- Service 2 -->
+        <div class="col-md-6 col-lg-4 col-xl-3 animate-fade-up" style="animation-delay: 0.1s;">
+          <div class="h-100 p-4"
+            style="background: #ffffff; border-radius: 1rem; border: 1px solid rgba(10,22,40,0.05); box-shadow: 0 10px 30px rgba(0,0,0,0.03); transition: all 0.3s ease; cursor: pointer;"
+            onmouseover="this.style.transform='translateY(-8px)'; this.style.borderColor='rgba(184, 134, 11, 0.4)'; this.style.boxShadow='0 15px 30px rgba(10,22,40,0.08)';"
+            onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(10,22,40,0.05)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.03)';">
+            <div class="mb-3"
+              style="width: 48px; height: 48px; background: rgba(184, 134, 11, 0.1); border-radius: 0.5rem; display: flex; align-items: center; justify-content: center;">
+              <i class="bi bi-diagram-2 text-gold" style="font-size: 1.5rem;"></i>
             </div>
+            <h4 class="text-navy mb-2" style="font-size: 1.05rem; font-weight: 700; line-height: 1.4;">2. FIBER NETWORK</h4>
+            <p style="font-size: 0.85rem; color: rgba(10,22,40,0.7); margin: 0; line-height: 1.5;">Reliable and stable fiber network for seamless connectivity.</p>
           </div>
-          <!-- Right: Service Cards -->
-          <div class="col-lg-7">
-            <div class="d-flex flex-column gap-3 h-100">
-              <div class="glass-card-dark p-4" style="border-radius: 1rem; border: 1px solid rgba(184, 134, 11, 0.15); transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(10,22,40,0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
-                <div class="d-flex align-items-start gap-4">
-                  <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(184, 134, 11, 0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                    <i class="bi bi-wifi text-gold" style="font-size:1.5rem;"></i>
-                  </div>
-                  <div>
-                    <h3 class="heading-sm text-cream mb-2" style="font-size: 1.15rem;">Gigabit Internet</h3>
-                    <p style="font-size:0.9rem; color:rgba(245,240,225,0.6); line-height:1.6; margin:0;">
-                      Fiber-to-the-home connectivity for streaming, gaming and remote work with low latency and
-                      consistent speeds.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="glass-card-dark p-4" style="border-radius: 1rem; border: 1px solid rgba(184, 134, 11, 0.15); transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(10,22,40,0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
-                <div class="d-flex align-items-start gap-4">
-                  <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(184, 134, 11, 0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                    <i class="bi bi-tv text-gold" style="font-size:1.5rem;"></i>
-                  </div>
-                  <div>
-                    <h3 class="heading-sm text-cream mb-2" style="font-size: 1.15rem;">Digital TV + Voice</h3>
-                    <p style="font-size:0.9rem; color:rgba(245,240,225,0.6); line-height:1.6; margin:0;">A premium
-                      digital entertainment package with crystal-clear television channels and reliable voice service.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="glass-card-dark p-4" style="border-radius: 1rem; border: 1px solid rgba(184, 134, 11, 0.15); transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(10,22,40,0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
-                <div class="d-flex align-items-start gap-4">
-                  <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(184, 134, 11, 0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                    <i class="bi bi-server text-gold" style="font-size:1.5rem;"></i>
-                  </div>
-                  <div>
-                    <h3 class="heading-sm text-cream mb-2" style="font-size: 1.15rem;">Resilient Network</h3>
-                    <p style="font-size:0.9rem; color:rgba(245,240,225,0.6); line-height:1.6; margin:0;">Built on GPON
-                      technology with strong backbone partnerships, designed for continuous service and rapid support.
-                    </p>
-                  </div>
-                </div>
-              </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="col-md-6 col-lg-4 col-xl-3 animate-fade-up" style="animation-delay: 0.0s;">
+          <div class="h-100 p-4"
+            style="background: #ffffff; border-radius: 1rem; border: 1px solid rgba(10,22,40,0.05); box-shadow: 0 10px 30px rgba(0,0,0,0.03); transition: all 0.3s ease; cursor: pointer;"
+            onmouseover="this.style.transform='translateY(-8px)'; this.style.borderColor='rgba(184, 134, 11, 0.4)'; this.style.boxShadow='0 15px 30px rgba(10,22,40,0.08)';"
+            onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(10,22,40,0.05)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.03)';">
+            <div class="mb-3"
+              style="width: 48px; height: 48px; background: rgba(184, 134, 11, 0.1); border-radius: 0.5rem; display: flex; align-items: center; justify-content: center;">
+              <i class="bi bi-tv text-gold" style="font-size: 1.5rem;"></i>
             </div>
+            <h4 class="text-navy mb-2" style="font-size: 1.05rem; font-weight: 700; line-height: 1.4;">3. TV NETWORK SERVICES</h4>
+            <p style="font-size: 0.85rem; color: rgba(10,22,40,0.7); margin: 0; line-height: 1.5;">Digital and analog Cable TV broadcasting for home entertainment.</p>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="col-md-6 col-lg-4 col-xl-3 animate-fade-up" style="animation-delay: 0.1s;">
+          <div class="h-100 p-4"
+            style="background: #ffffff; border-radius: 1rem; border: 1px solid rgba(10,22,40,0.05); box-shadow: 0 10px 30px rgba(0,0,0,0.03); transition: all 0.3s ease; cursor: pointer;"
+            onmouseover="this.style.transform='translateY(-8px)'; this.style.borderColor='rgba(184, 134, 11, 0.4)'; this.style.boxShadow='0 15px 30px rgba(10,22,40,0.08)';"
+            onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(10,22,40,0.05)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.03)';">
+            <div class="mb-3"
+              style="width: 48px; height: 48px; background: rgba(184, 134, 11, 0.1); border-radius: 0.5rem; display: flex; align-items: center; justify-content: center;">
+              <i class="bi bi-building text-gold" style="font-size: 1.5rem;"></i>
+            </div>
+            <h4 class="text-navy mb-2" style="font-size: 1.05rem; font-weight: 700; line-height: 1.4;">4. P2P &amp; P2MP CONNECTIVITY</h4>
+            <p style="font-size: 0.85rem; color: rgba(10,22,40,0.7); margin: 0; line-height: 1.5;">Dedicated business data transfers using fiber and wireless networks.</p>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="col-md-6 col-lg-4 col-xl-3 animate-fade-up" style="animation-delay: 0.0s;">
+          <div class="h-100 p-4"
+            style="background: #ffffff; border-radius: 1rem; border: 1px solid rgba(10,22,40,0.05); box-shadow: 0 10px 30px rgba(0,0,0,0.03); transition: all 0.3s ease; cursor: pointer;"
+            onmouseover="this.style.transform='translateY(-8px)'; this.style.borderColor='rgba(184, 134, 11, 0.4)'; this.style.boxShadow='0 15px 30px rgba(10,22,40,0.08)';"
+            onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(10,22,40,0.05)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.03)';">
+            <div class="mb-3"
+              style="width: 48px; height: 48px; background: rgba(184, 134, 11, 0.1); border-radius: 0.5rem; display: flex; align-items: center; justify-content: center;">
+              <i class="bi bi-globe text-gold" style="font-size: 1.5rem;"></i>
+            </div>
+            <h4 class="text-navy mb-2" style="font-size: 1.05rem; font-weight: 700; line-height: 1.4;">5. DIA (DEDICATED INTERNET ACCESS)</h4>
+            <p style="font-size: 0.85rem; color: rgba(10,22,40,0.7); margin: 0; line-height: 1.5;">Secure, high-speed dedicated connectivity tailored for your business needs.</p>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="col-md-6 col-lg-4 col-xl-3 animate-fade-up" style="animation-delay: 0.1s;">
+          <div class="h-100 p-4"
+            style="background: #ffffff; border-radius: 1rem; border: 1px solid rgba(10,22,40,0.05); box-shadow: 0 10px 30px rgba(0,0,0,0.03); transition: all 0.3s ease; cursor: pointer;"
+            onmouseover="this.style.transform='translateY(-8px)'; this.style.borderColor='rgba(184, 134, 11, 0.4)'; this.style.boxShadow='0 15px 30px rgba(10,22,40,0.08)';"
+            onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(10,22,40,0.05)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.03)';">
+            <div class="mb-3"
+              style="width: 48px; height: 48px; background: rgba(184, 134, 11, 0.1); border-radius: 0.5rem; display: flex; align-items: center; justify-content: center;">
+              <i class="bi bi-people text-gold" style="font-size: 1.5rem;"></i>
+            </div>
+            <h4 class="text-navy mb-2" style="font-size: 1.05rem; font-weight: 700; line-height: 1.4;">6. DOMESTIC SHARED CIR</h4>
+            <p style="font-size: 0.85rem; color: rgba(10,22,40,0.7); margin: 0; line-height: 1.5;">Cost-effective shared bandwidth solutions for homes and businesses.</p>
+          </div>
+        </div>
+
+        <!-- Service 7 -->
+        <div class="col-md-6 col-lg-4 col-xl-3 animate-fade-up" style="animation-delay: 0.0s;">
+          <div class="h-100 p-4"
+            style="background: #ffffff; border-radius: 1rem; border: 1px solid rgba(10,22,40,0.05); box-shadow: 0 10px 30px rgba(0,0,0,0.03); transition: all 0.3s ease; cursor: pointer;"
+            onmouseover="this.style.transform='translateY(-8px)'; this.style.borderColor='rgba(184, 134, 11, 0.4)'; this.style.boxShadow='0 15px 30px rgba(10,22,40,0.08)';"
+            onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(10,22,40,0.05)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.03)';">
+            <div class="mb-3"
+              style="width: 48px; height: 48px; background: rgba(184, 134, 11, 0.1); border-radius: 0.5rem; display: flex; align-items: center; justify-content: center;">
+              <i class="bi bi-tools text-gold" style="font-size: 1.5rem;"></i>
+            </div>
+            <h4 class="text-navy mb-2" style="font-size: 1.05rem; font-weight: 700; line-height: 1.4;">7. OSP ENGINEERING</h4>
+            <p style="font-size: 0.85rem; color: rgba(10,22,40,0.7); margin: 0; line-height: 1.5;">Technical planning, trenching, splicing, and deployment of fiber networks.</p>
+          </div>
+        </div>
+
+        <!-- Service 8 -->
+        <div class="col-md-6 col-lg-4 col-xl-3 animate-fade-up" style="animation-delay: 0.1s;">
+          <div class="h-100 p-4"
+            style="background: #ffffff; border-radius: 1rem; border: 1px solid rgba(10,22,40,0.05); box-shadow: 0 10px 30px rgba(0,0,0,0.03); transition: all 0.3s ease; cursor: pointer;"
+            onmouseover="this.style.transform='translateY(-8px)'; this.style.borderColor='rgba(184, 134, 11, 0.4)'; this.style.boxShadow='0 15px 30px rgba(10,22,40,0.08)';"
+            onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(10,22,40,0.05)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.03)';">
+            <div class="mb-3"
+              style="width: 48px; height: 48px; background: rgba(184, 134, 11, 0.1); border-radius: 0.5rem; display: flex; align-items: center; justify-content: center;">
+              <i class="bi bi-people-fill text-gold" style="font-size: 1.5rem;"></i>
+            </div>
+            <h4 class="text-navy mb-2" style="font-size: 1.05rem; font-weight: 700; line-height: 1.4;">8. DEALER PANEL ISP SERVICES</h4>
+            <p style="font-size: 0.85rem; color: rgba(10,22,40,0.7); margin: 0; line-height: 1.5;">We provide Dealer Panel Services powered by Transworld and Zong all across Pakistan.</p>
+          </div>
+        </div>
+
+        <!-- Service 9 -->
+        <div class="col-md-6 col-lg-4 col-xl-3 animate-fade-up" style="animation-delay: 0.0s;">
+          <div class="h-100 p-4"
+            style="background: #ffffff; border-radius: 1rem; border: 1px solid rgba(10,22,40,0.05); box-shadow: 0 10px 30px rgba(0,0,0,0.03); transition: all 0.3s ease; cursor: pointer;"
+            onmouseover="this.style.transform='translateY(-8px)'; this.style.borderColor='rgba(184, 134, 11, 0.4)'; this.style.boxShadow='0 15px 30px rgba(10,22,40,0.08)';"
+            onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(10,22,40,0.05)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.03)';">
+            <div class="mb-3"
+              style="width: 48px; height: 48px; background: rgba(184, 134, 11, 0.1); border-radius: 0.5rem; display: flex; align-items: center; justify-content: center;">
+              <i class="bi bi-usb-symbol text-gold" style="font-size: 1.5rem;"></i>
+            </div>
+            <h4 class="text-navy mb-2" style="font-size: 1.05rem; font-weight: 700; line-height: 1.4;">9. DARK CORE FIBER LEASING</h4>
+            <p style="font-size: 0.85rem; color: rgba(10,22,40,0.7); margin: 0; line-height: 1.5;">Private, unlit optical fiber infrastructure available for corporate leasing.</p>
+          </div>
+        </div>
+
+        <!-- Service 10 -->
+        <div class="col-md-6 col-lg-4 col-xl-3 animate-fade-up" style="animation-delay: 0.1s;">
+          <div class="h-100 p-4"
+            style="background: #ffffff; border-radius: 1rem; border: 1px solid rgba(10,22,40,0.05); box-shadow: 0 10px 30px rgba(0,0,0,0.03); transition: all 0.3s ease; cursor: pointer;"
+            onmouseover="this.style.transform='translateY(-8px)'; this.style.borderColor='rgba(184, 134, 11, 0.4)'; this.style.boxShadow='0 15px 30px rgba(10,22,40,0.08)';"
+            onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(10,22,40,0.05)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.03)';">
+            <div class="mb-3"
+              style="width: 48px; height: 48px; background: rgba(184, 134, 11, 0.1); border-radius: 0.5rem; display: flex; align-items: center; justify-content: center;">
+              <i class="bi bi-server text-gold" style="font-size: 1.5rem;"></i>
+            </div>
+            <h4 class="text-navy mb-2" style="font-size: 1.05rem; font-weight: 700; line-height: 1.4;">10. DATA CENTRE CO-LOCATION</h4>
+            <p style="font-size: 0.85rem; color: rgba(10,22,40,0.7); margin: 0; line-height: 1.5;">Secure server hosting featuring backup power and temperature controls.</p>
+          </div>
+        </div>
+
+        <!-- Service 11 -->
+        <div class="col-md-6 col-lg-4 col-xl-3 animate-fade-up" style="animation-delay: 0.0s;">
+          <div class="h-100 p-4"
+            style="background: #ffffff; border-radius: 1rem; border: 1px dashed rgba(184,134,11,0.35); box-shadow: 0 10px 30px rgba(0,0,0,0.03); transition: all 0.3s ease;">
+            <div class="mb-3"
+              style="width: 48px; height: 48px; background: rgba(184,134,11,0.08); border-radius: 0.5rem; display: flex; align-items: center; justify-content: center;">
+              <i class="bi bi-telephone-fill" style="font-size: 1.4rem; color: rgba(184,134,11,0.55);"></i>
+            </div>
+            <div class="d-flex align-items-start gap-2 flex-wrap mb-2">
+              <h4 class="text-navy mb-0" style="font-size: 1.05rem; font-weight: 700; line-height: 1.4;">11. VOICE SERVICES</h4>
+              <span style="font-size: 0.6rem; background: rgba(184,134,11,0.08); border: 1px solid rgba(184,134,11,0.4); color: var(--gold); padding: 0.2rem 0.55rem; border-radius: 2rem; font-weight: 700; white-space: nowrap; margin-top: 3px;">COMING SOON</span>
+            </div>
+            <p style="font-size: 0.85rem; color: rgba(10,22,40,0.65); margin: 0; line-height: 1.5;">Crystal-clear voice services with enterprise-grade reliability.</p>
+          </div>
+        </div>
+
+        <!-- Service 12 -->
+        <div class="col-md-6 col-lg-4 col-xl-3 animate-fade-up" style="animation-delay: 0.1s;">
+          <div class="h-100 p-4"
+            style="background: #ffffff; border-radius: 1rem; border: 1px dashed rgba(184,134,11,0.35); box-shadow: 0 10px 30px rgba(0,0,0,0.03); transition: all 0.3s ease;">
+            <div class="mb-3"
+              style="width: 48px; height: 48px; background: rgba(184,134,11,0.08); border-radius: 0.5rem; display: flex; align-items: center; justify-content: center;">
+              <i class="bi bi-shield-lock-fill" style="font-size: 1.4rem; color: rgba(184,134,11,0.55);"></i>
+            </div>
+            <div class="d-flex align-items-start gap-2 flex-wrap mb-2">
+              <h4 class="text-navy mb-0" style="font-size: 1.05rem; font-weight: 700; line-height: 1.4;">12. CYBERSECURITY</h4>
+              <span style="font-size: 0.6rem; background: rgba(184,134,11,0.08); border: 1px solid rgba(184,134,11,0.4); color: var(--gold); padding: 0.2rem 0.55rem; border-radius: 2rem; font-weight: 700; white-space: nowrap; margin-top: 3px;">COMING SOON</span>
+            </div>
+            <p style="font-size: 0.85rem; color: rgba(10,22,40,0.65); margin: 0; line-height: 1.5;">Advanced security solutions to protect your data, network, and digital assets.</p>
           </div>
         </div>
       </div>
@@ -240,6 +336,207 @@
   </section>
 
 
+
+  <!-- ── INFRASTRUCTURE & DATA CENTRE ── -->
+  <section class="section-padding-lg position-relative"
+    style="background: var(--navy); border-top: 1px solid rgba(184, 134, 11, 0.15); overflow: hidden;">
+    <!-- Abstract glow background -->
+    <div
+      style="position: absolute; top: -20%; left: -10%; width: 50%; height: 50%; background: radial-gradient(circle, rgba(184,134,11,0.15) 0%, rgba(10,22,40,0) 70%); filter: blur(60px); z-index: 0;">
+    </div>
+    <div
+      style="position: absolute; bottom: -20%; right: -10%; width: 50%; height: 50%; background: radial-gradient(circle, rgba(13,110,253,0.1) 0%, rgba(10,22,40,0) 70%); filter: blur(60px); z-index: 0;">
+    </div>
+
+    <div class="container-wide position-relative" style="z-index: 1;">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 animate-fade-up">
+          <p class="section-label mb-2"
+            style="color: var(--gold); letter-spacing: 0.15em; text-transform: uppercase; font-size: 0.75rem; font-weight: 700;">
+            State-of-the-Art Infrastructure</p>
+          <h2 class="heading-lg text-cream mb-4" style="font-size: 2.5rem; line-height: 1.2;">Empowering
+            Connectivity.<br><span style="color: rgba(245,240,225,0.6);">Enabling Tomorrow.</span></h2>
+          <div class="gold-divider-left mb-4"></div>
+          <p class="body-lg" style="color: rgba(245,240,225,0.7); font-size: 1.1rem; line-height: 1.7;">
+            At McSOL, our state-of-the-art headend infrastructure ensures high-performance internet and reliable
+            connectivity for homes and businesses. We manage a robust, carrier-grade network designed for
+            mission-critical operations.
+          </p>
+
+
+        </div>
+
+        <div class="col-lg-6 animate-fade-up">
+          <div class="row g-3">
+            <!-- Metric 1 -->
+            <div class="col-6">
+              <div class="p-4 rounded-3" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(184,134,11,0.2); height: 100%;">
+                <div class="text-gold" style="font-size: 2.5rem; font-weight: 800; line-height: 1; font-family: var(--font-body);">500K+</div>
+                <div class="mt-2" style="font-size: 0.875rem; color: rgba(245,240,225,0.65); font-weight: 500;">Active Subscribers</div>
+              </div>
+            </div>
+            <!-- Metric 2 -->
+            <div class="col-6">
+              <div class="p-4 rounded-3" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(184,134,11,0.2); height: 100%;">
+                <div class="text-gold" style="font-size: 2.5rem; font-weight: 800; line-height: 1; font-family: var(--font-body);">99.9%</div>
+                <div class="mt-2" style="font-size: 0.875rem; color: rgba(245,240,225,0.65); font-weight: 500;">Network Uptime</div>
+              </div>
+            </div>
+            <!-- Metric 3 -->
+            <div class="col-6">
+              <div class="p-4 rounded-3" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(184,134,11,0.2); height: 100%;">
+                <div class="text-gold" style="font-size: 2.5rem; font-weight: 800; line-height: 1; font-family: var(--font-body);">10 Gbps</div>
+                <div class="mt-2" style="font-size: 0.875rem; color: rgba(245,240,225,0.65); font-weight: 500;">Core Bandwidth</div>
+              </div>
+            </div>
+            <!-- Metric 4 -->
+            <div class="col-6">
+              <div class="p-4 rounded-3" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(184,134,11,0.2); height: 100%;">
+                <div class="text-gold" style="font-size: 2.5rem; font-weight: 800; line-height: 1; font-family: var(--font-body);">24/7</div>
+                <div class="mt-2" style="font-size: 0.875rem; color: rgba(245,240,225,0.65); font-weight: 500;">NOC Monitoring</div>
+              </div>
+            </div>
+            <!-- Feature List -->
+            <div class="col-12">
+              <div class="p-4 rounded-3" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(184,134,11,0.2);">
+                <p class="text-gold mb-3" style="font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;">Infrastructure Highlights</p>
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex align-items-center gap-3">
+                    <i class="bi bi-check-circle-fill text-gold" style="font-size: 0.9rem; flex-shrink:0;"></i>
+                    <span style="font-size: 0.9rem; color: rgba(245,240,225,0.75);">Carrier-grade fiber optic backbone</span>
+                  </div>
+                  <div class="d-flex align-items-center gap-3">
+                    <i class="bi bi-check-circle-fill text-gold" style="font-size: 0.9rem; flex-shrink:0;"></i>
+                    <span style="font-size: 0.9rem; color: rgba(245,240,225,0.75);">Redundant power & cooling systems</span>
+                  </div>
+                  <div class="d-flex align-items-center gap-3">
+                    <i class="bi bi-check-circle-fill text-gold" style="font-size: 0.9rem; flex-shrink:0;"></i>
+                    <span style="font-size: 0.9rem; color: rgba(245,240,225,0.75);">Enterprise-grade GPON technology</span>
+                  </div>
+                  <div class="d-flex align-items-center gap-3">
+                    <i class="bi bi-check-circle-fill text-gold" style="font-size: 0.9rem; flex-shrink:0;"></i>
+                    <span style="font-size: 0.9rem; color: rgba(245,240,225,0.75);">Multi-zone coverage across Faisalabad</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FAQ SECTION ═══════════════ -->
+  <section class="section-padding" style="background:var(--muted-bg);">
+    <div class="container-narrow">
+      <div class="text-center mb-5">
+        <p class="section-label mb-2 animate-fade-up">Got Questions?</p>
+        <h2 class="heading-lg mb-3 animate-fade-up">Frequently Asked Questions</h2>
+        <div class="gold-divider mb-4 animate-fade-up"></div>
+        <p class="body-md mx-auto animate-fade-up" style="max-width:40rem;">Everything you need to know about McSol fiber internet and our premium services.</p>
+      </div>
+
+      <div class="accordion accordion-mc animate-fade-up" id="faqAccordion">
+        <!-- Q1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              What is McSol fiber internet?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              McSol is a high-speed FTTH (fiber-to-the-home) internet service, offering unmatched speed, reliability, and performance. As the leading fiber internet provider in Pakistan, McSol ensures an exceptional user experience with a reliable connection and a multitude of value-added services.
+            </div>
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              What are the benefits of FTTH over traditional broadband?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              FTTH offers significantly higher internet speeds, making it ideal for streaming, gaming, and large file downloads. Fiber optic cables are less susceptible to interference and weather conditions, providing a more stable connection.
+            </div>
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              What equipment is needed for fiber internet connection?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              For McSol fiber internet service, you will need an Optical Network Terminal (ONT) installed at your home, and fiber optic cables. A router is also required if you need to extend signals.
+            </div>
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              How do I know which internet plan is right for me?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              The best plan for you depends on your internet usage. If you are a heavy internet user who streams, games, or works online, you might benefit from our high-speed fiber internet packages. Our support representatives are adept at understanding your needs and guiding you to the most suitable plan.
+            </div>
+          </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              What is FTTH?
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              FTTH (Fiber to the Home) is a technology that uses fiber optic cables to deliver high-speed internet directly to homes. This technology offers faster speeds and more reliable connections compared to traditional copper wires, ensuring that customers receive the best internet service in Pakistan.
+            </div>
+          </div>
+        </div>
+
+        <!-- Q6 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              Do you offer technical support over the phone or online chat?
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Yes, we offer 24/7 technical support over the phone and through chat. You can call us at <strong>+92-41-111 888 300</strong> or drop a text on our WhatsApp.
+            </div>
+          </div>
+        </div>
+
+        <!-- Q7 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+              Can I bundle internet with other services like cable TV or phone?
+            </button>
+          </h2>
+          <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Absolutely! We offer convenient bundled packages that combine high-speed internet with cable TV or phone service. Moreover, you can enhance your experience further by pairing your services with our Value-Added Services, providing a comprehensive solution tailored to your needs.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
   <!-- FOOTER -->
   <footer class="site-footer">
